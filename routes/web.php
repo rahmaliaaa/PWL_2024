@@ -5,11 +5,15 @@ use App\Http\Controllers\WelcomeController;
 use App\Http\Controllers\PageController;
 use App\Http\Controllers\PhotoController;
 
+Route::get('/greeting', [WelcomeController::class, 'greeting']);
+
+
+/*
 Route::resource('photos', PhotoController::class)->only(['index', 'edit']);
 Route::resource('photos', PhotoController::class)->except(['create', 'store', 'update', 'destroy']);
 
 
-/*
+
 use App\Http\Controllers\HomeController;
 use App\Http\Controllers\AboutController;
 use App\Http\Controllers\ArticleController;

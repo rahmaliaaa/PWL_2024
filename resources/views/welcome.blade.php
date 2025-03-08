@@ -1,12 +1,6 @@
-<!DOCTYPE html>
-<html lang="{{ str_replace(search: '_', replace: '-', subject:app()->getLocale)}}">
-    <head>
-        <meta charset="utf-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1">
-        <title>PWL 2024</title>
-    </head>
-    <body>
-        <h2>Pemrograman Web Lanjut 2024</h2>
-        <h3>Semangat Belajar Laravel 10</h3>
-    </body>
+<!-- View pada resources/views/hello.blade.php --> 
+<html> 
+    <body> 
+        <h1>Hello, {{ $name }}</h1> 
+    </body> 
 </html>
